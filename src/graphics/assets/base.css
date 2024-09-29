@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body,
 html {
   margin: 0;
@@ -15,7 +19,7 @@ html {
 }
 
 #app {
-  margin: 20px auto;
-  width: 1800px;
+  margin: 10px auto;
+  width: 1860px;
   height: 1040px;
 }

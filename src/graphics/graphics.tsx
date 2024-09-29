@@ -4,7 +4,6 @@ import LiveIcon from './components/LiveIcon';
 
 const app = (
   <>
-    <h1>てすと</h1>
     <LiveIcon />
   </>
 );

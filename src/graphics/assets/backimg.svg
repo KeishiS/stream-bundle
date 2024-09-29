@@ -6,16 +6,16 @@
   </defs>
 
   <!-- 背景 -->
-  <rect width="100%" height="100%" fill="#ccdcf5"/>
+  <rect width="100%" height="100%" fill="#0e3f8d"/>
 
   <!-- グリッドパターン -->
   <rect width="100%" height="100%" fill="url(#grid)"/>
 
   <!-- 左上の枠（1.5倍に拡大） -->
-  <path d="M 20 20 L 450 20 L 450 60 L 60 60 L 60 300 L 20 300 Z" fill="#FFFFFF" opacity="0.4"/>
+  <path d="M 15 15 L 515 15 L 515 70 L 70 70 L 70 265 L 15 265 Z" fill="#FFFFFF" opacity="0.2"/>
 
   <!-- 右下の枠（1.5倍に拡大） -->
-  <path d="M 1900 1060 L 1470 1060 L 1470 1020 L 1860 1020 L 1860 780 L 1900 780 Z" fill="#FFFFFF" opacity="0.4"/>
+  <path d="M 1905 1065 L 1405 1065 L 1405 1010 L 1850 1010 L 1850 815 L 1905 815 Z" fill="#FFFFFF" opacity="0.2"/>
 
   <!-- ランダムに配置された幾何学的形状 -->
   <rect x="150" y="300" width="100" height="100" fill="#FFFFFF" opacity="0.3" transform="rotate(15, 200, 350)"/>
