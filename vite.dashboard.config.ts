@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   root: resolve(__dirname, './src/dashboard'),
+  base: './',
   build: {
     outDir: resolve(__dirname, 'dashboard'),
     rollupOptions: {
