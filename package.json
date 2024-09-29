@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{ts,tsx}' && tsc --noEmit",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}' && tsc --noEmit",
+    "dev": "vite",
+    "build:dashboard": "vite build --config vite.dashboard.config.ts",
+    "build:graphics": "vite build --config vite.graphics.config.ts",
+    "build": "npm run build:dashboard && npm run build:graphics"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +33,26 @@
         "height": 1080
       }
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "prettier": "^3.3.3",
+    "ts-nodecg": "^0.3.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }

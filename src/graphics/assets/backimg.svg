@@ -8,16 +8,13 @@
             <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="noise" />
             <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="0.1" k3="0" k4="0" />
         </filter>
-        <filter id="blur">
-            <feGaussianBlur stdDeviation="8" />
-        </filter>
     </defs>
 
     <rect width="100%" height="100%" fill="url(#grad1)" />
 
     <rect width="100%" height="100%" fill="url(#grad1)" filter="url(#noise)" />
 
-    <g opacity="0.15" filter="url(#blur)">
+    <g opacity="0.1">
         <circle cx="200" cy="200" r="100" fill="#4a5568" />
         <circle cx="1720" cy="900" r="150" fill="#4a5568" />
         <circle cx="960" cy="540" r="200" fill="#4a5568" />
