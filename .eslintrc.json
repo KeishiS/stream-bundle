@@ -9,15 +9,10 @@
     "plugin:react/recommended",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/eslint-recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:tailwindcss/recommended"
   ],
-  "plugins": [
-    "import",
-    "prettier",
-    "react",
-    "react-hooks",
-    "@typescript-eslint"
-  ],
+  "plugins": ["import", "prettier", "react", "react-hooks", "@typescript-eslint"],
   "env": {
     "es6": true,
     "node": true,
