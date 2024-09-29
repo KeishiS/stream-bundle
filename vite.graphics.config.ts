@@ -4,11 +4,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  root: resolve(__dirname, './src/graphics'),
   build: {
-    outDir: 'graphics',
+    outDir: resolve(__dirname, 'graphics'),
     rollupOptions: {
       input: {
-        graphics: resolve(__dirname, 'src/graphics/graphics.html'),
+        graphics: resolve(__dirname, './src/graphics/graphics.html'),
       },
     },
   },
