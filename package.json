@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint 'src/**/*.{ts,tsx}' && tsc --noEmit",
+    "lint": "eslint --fix 'src/**/*.{ts,tsx}' && tsc --noEmit",
     "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}' && tsc --noEmit",
     "dev": "vite",
     "build:dashboard": "vite build --config vite.dashboard.config.ts",

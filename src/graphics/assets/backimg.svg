@@ -1,30 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
-    <defs>
-        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#0a192f;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#112240;stop-opacity:1" />
-        </linearGradient>
-        <filter id="noise" x="0%" y="0%" width="100%" height="100%">
-            <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="noise" />
-            <feComposite in="SourceGraphic" in2="noise" operator="arithmetic" k1="0" k2="0.1" k3="0" k4="0" />
-        </filter>
-    </defs>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
 
-    <rect width="100%" height="100%" fill="url(#grad1)" />
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#ccdcf5"/>
 
-    <rect width="100%" height="100%" fill="url(#grad1)" filter="url(#noise)" />
+  <!-- グリッドパターン -->
+  <rect width="100%" height="100%" fill="url(#grid)"/>
 
-    <g opacity="0.1">
-        <circle cx="200" cy="200" r="100" fill="#4a5568" />
-        <circle cx="1720" cy="900" r="150" fill="#4a5568" />
-        <circle cx="960" cy="540" r="200" fill="#4a5568" />
-        <circle cx="400" cy="800" r="80" fill="#718096" />
-        <circle cx="1600" cy="300" r="120" fill="#2d3748" />
-        <circle cx="100" cy="1000" r="50" fill="#a0aec0" />
-        <circle cx="1800" cy="100" r="70" fill="#2d3748" />
-        <circle cx="600" cy="100" r="90" fill="#4a5568" />
-        <circle cx="1300" cy="700" r="130" fill="#718096" />
-        <circle cx="800" cy="950" r="110" fill="#2d3748" />
-        <circle cx="1100" cy="200" r="60" fill="#a0aec0" />
-    </g>
+  <!-- 左上の枠（1.5倍に拡大） -->
+  <path d="M 20 20 L 450 20 L 450 60 L 60 60 L 60 300 L 20 300 Z" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- 右下の枠（1.5倍に拡大） -->
+  <path d="M 1900 1060 L 1470 1060 L 1470 1020 L 1860 1020 L 1860 780 L 1900 780 Z" fill="#FFFFFF" opacity="0.4"/>
+
+  <!-- ランダムに配置された幾何学的形状 -->
+  <rect x="150" y="300" width="100" height="100" fill="#FFFFFF" opacity="0.3" transform="rotate(15, 200, 350)"/>
+  <circle cx="1700" cy="200" r="80" fill="#a8baec" opacity="0.7"/>
+  <polygon points="800,600 900,750 700,750" fill="#FFFFFF" opacity="0.2" transform="rotate(-10, 800, 675)"/>
+  <rect x="1200" y="800" width="120" height="120" fill="#e0e9f9" opacity="0.5" transform="rotate(30, 1260, 860)"/>
+  <circle cx="300" cy="900" r="60" fill="#FFFFFF" opacity="0.3"/>
+  <polygon points="1600,400 1700,500 1500,500" fill="#a8baec" opacity="0.7" transform="rotate(5, 1600, 450)"/>
+  <rect x="500" y="200" width="80" height="80" fill="#FFFFFF" opacity="0.2" transform="rotate(-20, 540, 240)"/>
+  <circle cx="1100" cy="700" r="50" fill="#e0e9f9" opacity="0.5"/>
+  <polygon points="400,800 500,900 300,900" fill="#a8baec" opacity="0.7" transform="rotate(25, 400, 850)"/>
+  <rect x="1500" y="100" width="90" height="90" fill="#e0e9f9" opacity="0.5" transform="rotate(10, 1545, 145)"/>
 </svg>
