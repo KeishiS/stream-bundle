@@ -9,16 +9,13 @@ html {
   overflow: hidden;
 }
 
-#app {
+#container {
   width: 1920px;
   height: 1080px;
 }
 
-#main_frame {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.3);
-  width: 1440px;
-  height: 900px;
-  margin-left: 30px;
-  margin-top: 30px;
+#app {
+  margin: 20px auto;
+  width: 1800px;
+  height: 1040px;
 }
