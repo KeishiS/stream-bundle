@@ -7,3 +7,7 @@ export type MessageMap = {
     data: string;
   };
 };
+
+export const repDefaultValues: ReplicantMap = {
+  talkerList: [],
+};

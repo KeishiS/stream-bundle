@@ -4,7 +4,6 @@ import App from './components/App';
 
 const app = (
   <>
-    <h1>あぷり</h1>
     <App />
   </>
 );
