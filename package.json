@@ -9,7 +9,8 @@
     "dev": "vite",
     "build:dashboard": "vite build --config vite.dashboard.config.ts",
     "build:graphics": "vite build --config vite.graphics.config.ts",
-    "build": "npm run build:dashboard && npm run build:graphics"
+    "build:extension": "vite build --config vite.extension.config.ts",
+    "build": "npm run build:dashboard && npm run build:graphics && npm run build:extension"
   },
   "keywords": [],
   "author": "",
@@ -21,7 +22,7 @@
       {
         "name": "stream-bundle",
         "title": "Stream Bundle",
-        "width": 2,
+        "width": 5,
         "file": "dashboard.html",
         "headerColor": "#525F78"
       }
@@ -35,6 +36,7 @@
     ]
   },
   "devDependencies": {
+    "@nodecg/types": "^2.1.12",
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.7.0",
