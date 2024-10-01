@@ -3,10 +3,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "id": {
-      "type": "number",
-      "minimum": 0
-    },
     "name": {
       "type": "string"
     },

@@ -5,10 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type ListTalkInfo = TalkInfo[];
-
 export interface TalkInfo {
-	id: number;
 	name: string;
 	title: string;
 }
