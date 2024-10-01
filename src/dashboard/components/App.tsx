@@ -2,19 +2,24 @@ import React from 'react';
 import { useReplicant } from '../../hooks';
 
 const App = () => {
-  const [talkerList] = useReplicant('talkerList');
-  console.log(`${talkerList}`);
+  const [talkList] = useReplicant('talkList');
+  const [currentIdx] = useReplicant('currentIdx');
+  console.log(`${talkList}`);
 
   return (
     <>
-      {talkerList && (
+      {talkList && (
         <ul>
-          {talkerList.map((val, idx) => (
-            <li key={idx}>{val}</li>
+          {talkList.map((talkInfo, idx) => (
+            <li key={idx} style={{ color: idx == currentIdx ? 'red' : 'white' }}>
+              Name: {talkInfo.name}, title: {talkInfo.title}
+            </li>
           ))}
         </ul>
       )}
-      <button>{'Add'}</button>
+      <div>現在の番号: {currentIdx}</div>
+      <button onClick={() => nodecg.sendMessage('prevIdx')}>Prev</button>
+      <button onClick={() => nodecg.sendMessage('nextIdx')}>Next</button>
     </>
   );
 };

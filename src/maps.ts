@@ -1,13 +1,19 @@
+import type { TalkInfo } from './types/schemas';
+
 export type ReplicantMap = {
-  talkerList: string[];
+  talkList: TalkInfo[];
+  currentIdx: number;
 };
 
 export type MessageMap = {
-  addTalker: {
-    data: string;
+  addTalkInfo: {
+    data: TalkInfo;
   };
+  prevIdx: object;
+  nextIdx: object;
 };
 
 export const repDefaultValues: ReplicantMap = {
-  talkerList: [],
+  talkList: [],
+  currentIdx: 0,
 };

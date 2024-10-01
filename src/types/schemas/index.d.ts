@@ -1,3 +1,3 @@
 /* eslint-disable */
 // @ts-ignore
-export * from './listTalkInfo';
+export * from './talkInfo';
