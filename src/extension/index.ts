@@ -12,8 +12,8 @@ module.exports = (nodecg: NodecgInstance) => {
     console.log(`[CHANGED] value: ${value}`);
   });
   nodecg.listenFor('addTalker', (talker) => {
+    console.log(`[ListenFor] talker: ${talker}`);
     const updated = [...talkerReplicant.value, talker];
     talkerReplicant.value = updated;
-    console.log(`[Listen: addTalker] updated: ${updated}`);
   });
 };
