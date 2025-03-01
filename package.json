@@ -10,7 +10,7 @@
     "build:dashboard": "vite build --config vite.dashboard.config.ts",
     "build:graphics": "vite build --config vite.graphics.config.ts",
     "build:extension": "vite build --config vite.extension.config.ts",
-    "build": "npm run build:dashboard && npm run build:graphics && npm run build:extension"
+    "build": "yarn run build:dashboard && yarn run build:graphics && yarn run build:extension"
   },
   "keywords": [],
   "author": "",
