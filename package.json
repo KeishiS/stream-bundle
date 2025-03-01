@@ -17,7 +17,7 @@
   "license": "ISC",
   "description": "",
   "nodecg": {
-    "compatibleRange": "2.1.0",
+    "compatibleRange": "^2.1.0",
     "dashboardPanels": [
       {
         "name": "stream-bundle",
